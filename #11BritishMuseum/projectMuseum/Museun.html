@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/CssMuseum.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="./css/CssMuseum.css" />
+    <title>The British Museum</title>
+  </head>
+  <body>
+    <!-- Название -->
+    <div class="wrapper box">
+      <div class="content">
+        <div class="hi">
+          <div class="container">
+            <div class="hiRow">
+              <div class="time">
+                <ul class="hiList">
+                  <li>Free entry</li>
+                  <li>Open today: 10.00–17.00</li>
+                  <li>Last entry: 16.00</li>
+                </ul>
+              </div>
+              <div class="hiBody">
+                <div class="hiTitle">The British Museum</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Что такое Музей  -->
+      <div class="what">
+        <div class="container">
+          <div class="whatRow">
+            <div class="whatImage">
+              <img class="imgPosition" src="./img/NFyclw2pfv0.jpg" alt="" />
+            </div>
+            <div class="whatBody">
+              <div class="whatTitle title">
+                The first national public museum of the world.
+              </div>
+              <div class="whatText">
+                <p class="borderText">
+                  The British Museum was founded in 1753 and opened its doors in
+                  1759. It was the first national museum to cover all fields of
+                  human knowledge, open to visitors from across the world.
+                </p>
+                <p class="borderText">
+                  Enlightenment ideals and values – critical scrutiny of all
+                  assumptions, open debate, scientific research, progress and
+                  tolerance – have marked the Museum since its foundation.
+                </p>
+                <p class="borderText">
+                  The Museum is driven by an insatiable curiosity for the world,
+                  a deep belief in objects as reliable witnesses and documents
+                  of human history, sound research, as well as the desire to
+                  expand and share knowledge.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Table -->
+      <!-- ot suda -->
+      <div class="tableImg">
+        <div class="w3-container textTabbed">
+          <h2>Tabbed Image Gallery</h2>
+          <p>Click on the images below:</p>
+        </div>
+
+        <div class="w3-row-padding">
+          <div class="w3-col s3 w3-container">
+            <a
+              href="javascript:void(0)"
+              class="w3-hover-opacity"
+              onclick="openImg('Nature');"
+            >
+              <!-- 1 Картинка -->
+              <img
+                class="bestImg"
+                src="./img/The Reading Room.jpg"
+                alt="Nature"
+                style="width: 50%"
+              />
+            </a>
+          </div>
+          <div class="w3-col s3 w3-container">
+            <a
+              href="javascript:void(0)"
+              class="w3-hover-opacity"
+              onclick="openImg('Snow');"
+            >
+              <!-- 2 Картинка -->
+              <img
+                class="bestImg"
+                src="./img/rosetta-stone-egyptian.jpg"
+                alt="Snow"
+                style="width: 50%"
+              />
+            </a>
+          </div>
+          <div class="w3-col s3 w3-container">
+            <a
+              href="javascript:void(0)"
+              class="w3-hover-opacity"
+              onclick="openImg('Mountains');"
+            >
+              <!-- 3 Картинка -->
+              <img
+                class="bestImg"
+                src="./img/limestone-relief-hieroglyphs.jpg"
+                alt="Mountains"
+                style="width: 50%"
+              />
+            </a>
+          </div>
+          <div class="w3-col s3 w3-container">
+            <a
+              href="javascript:void(0)"
+              class="w3-hover-opacity"
+              onclick="openImg('Lights');"
+            >
+              <!-- 4 Картинка -->
+              <img
+                class="bestImg"
+                src="./img/Luxury_and_power.jpg"
+                alt="Lights"
+                style="width: 50%"
+              />
+            </a>
+          </div>
+        </div>
+        <br />
+      </div>
+      <!-- do suda -->
+      <div
+        id="Nature"
+        class="picture w3-display-container"
+        style="display: none"
+      >
+        <!-- 1 Картинка -->
+        <img src="./img/The Reading Room.jpg" alt="Nature" style="width: 25%" />
+        <span
+          onclick="this.parentElement.style.display='none'"
+          class="w3-display-topright w3-button w3-transparent w3-text-white"
+          >&times;</span
+        >
+        <div
+          class="w3-display-bottomleft w3-container w3-padding w3-text-white"
+        >
+          <div class="textInformation">
+            <p class="firstText">The Reading Room</p>
+            <br />
+            <p>
+              The Reading Room stands at the heart of the Museum, in the centre
+              of the Great Court. Completed in 1857, it was hailed as one of the
+              great sights of London and became a world-famous centre of
+              learning.
+            </p>
+            <br />
+            <p>
+              The Reading Room opened on 2 May 1857. Between 8–16 May, the
+              Library was opened up for a special one-off public viewing. More
+              than 62,000 visitors came to marvel at the new building. Those
+              wanting to use it had to apply in writing and were issued a
+              reader's ticket by the Principal Librarian. Among those granted
+              tickets were: Karl Marx, Lenin (who signed in under the name Jacob
+              Richter) and novelists such as Bram Stoker and Sir Arthur Conan
+              Doyle.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="Snow" class="picture w3-display-container" style="display: none">
+        <!-- 2 Картинка -->
+        <img
+          src="./img/rosetta-stone-egyptian.jpg"
+          alt="Snow"
+          style="width: 25%"
+        />
+        <span
+          onclick="this.parentElement.style.display='none'"
+          class="w3-display-topright w3-button w3-transparent w3-text-white"
+          >&times;</span
+        >
+        <div
+          class="w3-display-bottomleft w3-container w3-padding w3-text-white"
+        >
+          <div class="textInformation">
+            <p class="firstText">The Rosetta Stone</p>
+            <br />
+            <p>
+              The Rosetta Stone is a stele composed of granodiorite inscribed
+              with three versions of a decree issued in Memphis, Egypt, in 196
+              BC during the Ptolemaic dynasty on behalf of King Ptolemy V
+              Epiphanes. The top and middle texts are in Ancient Egyptian using
+              hieroglyphic and Demotic scripts respectively, while the bottom is
+              in Ancient Greek. The decree has only minor differences between
+              the three versions, making the Rosetta Stone key to deciphering
+              the Egyptian scripts.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="Mountains"
+        class="picture w3-display-container"
+        style="display: none"
+      >
+        <!-- 3 Картинка -->
+        <img
+          src="./img/limestone-relief-hieroglyphs.jpg"
+          alt="Mountains"
+          style="width: 25%"
+        />
+        <span
+          onclick="this.parentElement.style.display='none'"
+          class="w3-display-topright w3-button w3-transparent"
+          >&times;</span
+        >
+        <div
+          class="w3-display-bottomleft w3-container w3-padding w3-text-white"
+        >
+          <div class="textInformation">
+            <p class="firstText">Explore the fascinating history of Egypt.</p>
+            <br />
+            <p>
+              Some of the British Museum's best-known collection items come from
+              Egypt, each with their own unique story. The Rosetta Stone is one
+              of the most visited objects in the Museum and is equally popular
+              online. Discover everything you ever wanted to know about the
+              tablet that unlocked the secret of Egyptian hieroglyphs. Plus,
+              find out more about Egypt, ancient and modern, through video, blog
+              and collection highlights below.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="Lights"
+        class="picture w3-display-container"
+        style="display: none"
+      >
+        <!-- 4 Картинка -->
+        <img src="./img/Luxury_and_power.jpg" alt="Lights" style="width: 25%" />
+        <span
+          onclick="this.parentElement.style.display='none'"
+          class="w3-display-topright w3-button w3-transparent w3-text-white"
+          >&times;</span
+        >
+        <div
+          class="w3-display-bottomleft w3-container w3-padding w3-text-white"
+        >
+          <div class="textInformation">
+            <p class="firstText">
+              «'Treasure there was in plenty – tents full of gold and silver
+              furniture… bowls, goblets, and cups, all made of gold'»
+            </p>
+            <br />
+            <p>
+              When Greek soldiers captured the royal command tent of the Persian
+              king during the Greco-Persian Wars (499–449 BC), they were
+              confronted suddenly and spectacularly by luxury on an unimaginable
+              scale. To many ancient Greek writers, the victories of the small
+              Greek forces against the mighty Persians were a triumph of
+              discipline and restraint over an empire weakened by decadence and
+              excess.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        function openImg(imgName) {
+          var i, x;
+          x = document.getElementsByClassName("picture");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          document.getElementById(imgName).style.display = "block";
+        }
+      </script>
+
+      <!-- Подвал -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footerRow">
+            <img class="museumImg" src="img/british-museum-logo.svg" alt="" />
+          </div>
+        </div>
+        <div class="footerText">
+          <p class="Name">Moroz Alexandr 12 'A'</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

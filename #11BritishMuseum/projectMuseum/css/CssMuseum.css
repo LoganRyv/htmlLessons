@@ -1,0 +1,287 @@
+/* Обнуляет отступ, середину и границы */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/* Меняет ширину блоков */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*Меняем линии обводки  */
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+/* Делаем блочные теги */
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+/* Уравнивание поведение шрифтов, и запрещам самовольство */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+/* Запрос на наследие св-ва шрифта */
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*---------------------------------------------*/
+
+/* ================================== */
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+/* Header */
+.wrapper {
+  min-height: 100%;
+  overflow: auto;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 1 auto;
+}
+.hi {
+  background-color: #000000;
+}
+.container {
+  max-width: 1180px;
+  margin: 0px auto;
+}
+.hiRow {
+  display: flex;
+  padding: 50px 0px;
+  flex-direction: row;
+  width: 1300px;
+  justify-content: center;
+  align-items: center;
+}
+.hiBody {
+  color: #fff;
+  padding: 0px 30px 0px 300px;
+  width: 1000px;
+}
+.hiTitle {
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+  font-size: 60px;
+  padding: 0px 90px 0px 0px;
+  cursor: pointer;
+}
+/* фон */
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+.box {
+  background: url(../img/Great\ Court\ 04.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+/* Footer */
+.footer {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+.footerRow {
+  display: flex;
+  height: 95px;
+  justify-content: center;
+}
+.museumImg {
+  width: 18%;
+}
+
+.footerText {
+  color: #445162;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+}
+/* Первый музей */
+.title {
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  border-radius: 7px;
+  border: 3px solid #ffffff;
+  background-color: #fff;
+}
+.what {
+  padding: 110px 0px 120px 0px;
+  cursor: default;
+  align-items: start;
+}
+.whatRow {
+  display: flex;
+  align-items: center;
+}
+.whatImage {
+  flex: 0 0 430px;
+}
+.whatTitle {
+  position: relative;
+  margin: 0px 0px 0px 0px;
+  font-weight: 600;
+  padding: 10px 0px 5px 0px;
+  bottom: 85px;
+  right: 610px;
+}
+.whatImage img {
+  max-width: 100%;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 3px 5px 3px #445162;
+  scale: 210%;
+  height: 240px;
+}
+.imgPosition {
+  height: 50px;
+}
+.whatBody {
+  flex: 1 1 auto;
+  padding: 0px 0px 0px 38px;
+  align-items: center;
+}
+
+.borderText {
+  box-sizing: border-box;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 7px;
+  background-color: #ffffff;
+  font-size: 24px;
+  opacity: 0.9;
+  margin: 0px 0px 0px 300px;
+}
+.borderText:nth-child(2) {
+  margin: 20px 0px 20px 200px;
+}
+.whatText p {
+  margin: 0px 0px 20px 0px;
+  color: #000000;
+  padding: 20px 0px 20px 0px;
+}
+.whatText p:last-child {
+  position: relative;
+  bottom: 10px;
+}
+.whatText p:first-child {
+  position: relative;
+  top: 10px;
+}
+.borderText:hover {
+  box-shadow: 3px 5px 3px #445162;
+}
+/* Колонки с флекс контейнерами */
+.tableImg {
+  background: #000000;
+  opacity: 0.8;
+}
+
+.bestImg {
+  border: 5px solid white;
+  margin: 0px 0px 40px 0px;
+  border-radius: 7px;
+}
+
+.textTabbed {
+  color: #fff;
+  font-size: 20px;
+}
+.textInformation {
+  border-radius: 7px;
+  flex: 0 1 auto;
+  font-size: 24px;
+  text-align: left;
+  max-width: 680px;
+  border: 5px solid rgb(39, 39, 39);
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000000;
+  opacity: 0.8;
+}
+.firstText {
+  font-weight: 600;
+}
+.Name {
+  padding-left: 1000px;
+  font-size: 8px;
+}
+.time {
+  text-align: left;
+  color: white;
+  margin: 0px 30px 0px 0px;
+}
+.hiList li {
+  background: url("../img/icons/icon09.png") 0 1px no-repeat;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  line-height: 22px;
+  padding: 0px 0px 0px 36px;
+  margin: 0px 0px 15px 0px;
+}
+.hiList li:first-child {
+  background: url("../img/icons/icon08.png") 0 1px no-repeat;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  line-height: 22px;
+  padding: 0px 0px 0px 36px;
+  margin: 0px 0px 15px 0px;
+}

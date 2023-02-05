@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Знакомство с HTML тегами</title>
+    <meta http-equiv="Contetnt-type" content="text/html;charset=UTF-8" />
+  </head>
+  <!-- Создание формы -->
+
+  <body>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <div>
+        <p>Name</p>
+        <input tabindex="1" name="username" type="text" />
+      </div>
+      <div>
+        <p>Password</p>
+        <input tabindex="2" name="userpass" type="password" />
+      </div>
+      <div>
+        <p>Telephone</p>
+        <input tabindex="3" name="userphone" type="tel" />
+      </div>
+      <div>
+        <br />
+        <p>Пол</p>
+        <p>
+          <input
+            tabindex="4"
+            checked
+            type="radio"
+            name="Gender"
+            value="Female"
+          />Женский
+        </p>
+        <p>
+          <input tabindex="4" type="radio" name="Gender" value="Male" />Мужской
+        </p>
+        <p><input tabindex="4" type="radio" name="Gender" value="MF" />Оно</p>
+      </div>
+      <div>
+        <p>Имущество</p>
+        <p>
+          <input
+            tabindex="5"
+            checked
+            type="checkbox"
+            name="bike"
+            value="yes"
+          />Велик
+        </p>
+        <p>
+          <input tabindex="6" type="checkbox" name="car" value="yes" />Машина
+        </p>
+        <p>
+          <input
+            tabindex="7"
+            disabled
+            type="checkbox"
+            name="house"
+            value="yes"
+          />Бот лейн
+        </p>
+      </div>
+      <div>
+        <p>Дополнительная информация</p>
+        <textarea tabindex="8" name="text" cols="25" rows="3"></textarea>
+      </div>
+      <div>
+        <p>Прикрепить фото</p>
+        <input tabindex="9" type="file" name="fotouser" />
+      </div>
+      <div>
+        <p>Любимый цвет</p>
+        <select tabindex="10" name="color">
+          <option value="green">Зелёный</option>
+          <option selected value="blue">Синий</option>
+          <option value="red">Красный</option>
+          <option value="violete">Фиолетовый</option>
+          <option value="yellow">Жёлтый</option>
+          <option value="pink">Розовый</option>
+          <option value="black">Чёрный</option>
+        </select>
+      </div>
+      <div>
+        <p>Действия</p>
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+      </div>
+    </form>
+  </body>
+</html>

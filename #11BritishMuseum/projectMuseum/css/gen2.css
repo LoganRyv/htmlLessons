@@ -1,0 +1,292 @@
+/* Обнуляет отступ, середину и границы */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/* Меняет ширину блоков */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*Меняем линии обводки  */
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+/* Делаем блочные теги */
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+/* Уравнивание поведение шрифтов, и запрещам самовольство */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+/* Запрос на наследие св-ва шрифта */
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*---------------------------------------------*/
+/* body {
+  font-family: Arial, Helvetica, sans-serif;
+} */
+/* HightBlock  */
+/* .wrapper {
+  min-height: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 1 auto;
+}
+.hi {
+  background-color: #445162;
+}
+.container {
+  max-width: 1180px;
+  margin: 0px auto;
+}
+.hiRow {
+  display: flex;
+  padding: 50px 0px;
+  justify-content: space-between;
+}
+.hiBody {
+  color: #fff;
+  padding: 0px 30px 0px 0px;
+}
+.hiTitle {
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+  font-size: 60px;
+  margin: 0px 0px 38px 0px;
+} */
+/* ================== */
+.hiList li {
+  background: url("../img/icons/check_icon.png") 0 1px no-repeat;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  line-height: 22px;
+  padding: 0px 0px 0px 36px;
+  margin: 0px 0px 15px 0px;
+}
+/* footer */
+.footer {
+  background-color: #f5f5f5;
+}
+.footerRow {
+  display: flex;
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+}
+.footerText {
+  color: #445162;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+}
+/* allClsasesWgat  */
+
+.title {
+  color: #445161;
+  font-size: 30px;
+  line-height: 36px;
+}
+.what {
+  padding: 50px 0px;
+}
+.whatRow {
+  display: flex;
+}
+.whatImage {
+  flex: 0 0 430px;
+}
+.whatImage img {
+  max-width: 100%;
+}
+.whatBody {
+  flex: 1 1 auto;
+  padding: 0px 0px 0px 38px;
+}
+.whatTitle {
+  margin: 0px 0px 33px 0px;
+  font-weight: 600;
+}
+.whatText p {
+  margin: 0px 0px 25px 0px;
+  color: #333333;
+  font-size: 16px;
+  line-height: 24px;
+}
+/* doubleFlex */
+.colums {
+  background-color: #f5f5f5;
+  padding: 50px 0px 20px 0px;
+}
+.columsTitle {
+  align-items: center;
+  margin: 0px 0px 30px 0px;
+  font-weight: 600;
+}
+
+.columsRow {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -8px;
+}
+.columsColumn {
+  flex: 0 1 50%;
+  margin-bottom: 30px;
+  padding: 0px 8px;
+}
+
+.itemRow {
+  display: flex;
+}
+.itemImage {
+  flex: 0 0 200px;
+}
+.itemBody {
+  flex: 1 1 auto;
+  padding: 0px 0px 0px 15px;
+}
+.itemTitle {
+  color: #445161;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0px 0px 13px 0px;
+}
+.itemText {
+  color: #333333;
+  font-size: 16px;
+  line-height: 24px;
+}
+/*vertical*/
+
+.vertical {
+  padding: 50px 0px;
+}
+.verticaTitle {
+  color: #445161;
+  font-size: 30px;
+  font-weight: 600;
+}
+.title {
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+
+.vericalBody {
+  max-width: 990px;
+  margin: 0px auto;
+}
+.verticalRow {
+  display: flex;
+  margin: 0px -22.5px;
+}
+.vertivalColums {
+  flex: 0 1 33.333%;
+  padding: 0px 22.5px;
+  display: flex;
+}
+.verticalItem {
+  background-color: #445162;
+  color: #fff;
+  border-radius: 5px;
+  border: 5px solid #445162;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.verticalSubtitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-style: 24px;
+  padding: 12px 0px;
+}
+.verticalLabel {
+  font-size: 24px;
+  text-align: center;
+  background-color: #fff;
+  color: #445162;
+  padding: 15px 0px;
+  font-weight: 600;
+}
+
+.verticalText {
+  padding: 20px;
+  font-style: 14px;
+  line-height: 24px;
+  flex: 1 1 auto;
+}
+.verticalText p {
+  margin: 0px 0px 15px 0px;
+}
+.verticalText p:last-child {
+  margin: 0;
+}
+
+.verticalButton {
+  display: block;
+  margin: 0px 20px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: #ffffff;
+  font-weight: 700;
+}

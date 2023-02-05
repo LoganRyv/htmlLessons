@@ -1,0 +1,144 @@
+/* Обнуляет отступ, середину и границы */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/* Меняет ширину блоков */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*Меняем линии обводки  */
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+/* Делаем блочные теги */
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+/* Уравнивание поведение шрифтов, и запрещам самовольство */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+/* Запрос на наследие св-ва шрифта */
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*---------------------------*/
+/* Шрифт */
+.arial {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+/* Размер шрифта */
+.fontsize30 {
+  font-size: 30px;
+}
+/* Курсив */
+.italic {
+  font-style: italic;
+}
+/* Жирный шрифт */
+.font700 {
+  font-weight: 700;
+}
+/* цвет */
+.colorred {
+  color: crimson;
+}
+/* Выравнивание оп право*/
+.textright {
+  text-align: center;
+}
+.decoration {
+  /* Убирает эфекты */
+  text-decoration: none;
+  /* Подчёркивает */
+  text-decoration: underline;
+  /* Зачёркивание */
+  text-decoration: line-through;
+}
+/* тени */
+.shadow {
+  text-shadow: 1px 1px 1px #000;
+}
+/* каждая буква заглавная */
+.texttransform {
+  text-transform: capitalize;
+  /* caps */
+  text-transform: uppercase;
+  /* low-form */
+  text-transform: lowercase;
+}
+/* крассная строка */
+.textident {
+  text-indent: 50px;
+}
+/* Ширина между буквами */
+.lscape {
+  letter-spacing: 5px;
+}
+/* Ширина между словами */
+.wspace {
+  word-spacing: 10px;
+}
+/* текст в одну линию */
+.whitespace {
+  white-space: nowrap;
+}
+/* Протранство между строками */
+.lineheight {
+  line-height: 20px;
+}

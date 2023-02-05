@@ -1,0 +1,124 @@
+/* Обнуляет отступ, середину и границы */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/* Меняет ширину блоков */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*Меняем линии обводки  */
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+/* Делаем блочные теги */
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+/* Уравнивание поведение шрифтов, и запрещам самовольство */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+/* Запрос на наследие св-ва шрифта */
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*---------------------------------------------*/
+.content {
+  display: grid;
+}
+.grid {
+  position: relative;
+}
+.gridBody {
+  display: grid;
+  grid-template-columns: 200px 150px 300px;
+  grid-template-rows: 100px;
+}
+.gridItem {
+  text-align: center;
+  border: 2px dashed red;
+  padding: 30px;
+}
+
+.gridWraper {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+    "header header"
+    "seide content";
+}
+.gridHeader {
+}
+.gridAside {
+}
+.gridContent {
+  padding: 30px;
+  border: 2px dashed red;
+  margin: 0px 0px 15px 0px;
+}
+
+.gridHeader {
+  grid-area: header;
+}
+.gridAside {
+  grid-area: side;
+}
+.gridContent {
+  grid-area: content;
+}
