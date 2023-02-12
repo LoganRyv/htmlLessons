@@ -12,14 +12,14 @@
 // 2 Мультирование
 // console.log("Имя Человека: " + name + ", а возраст человека " + age + ".");
 
-//Взаимодействи с пользователем
+// Взаимодействи с пользователем
 // const lastName = prompt("Введите фамилию");
 // const ages = prompt("Введите возраст");
 // alert("Имя человека: " + lastName + ", а возраст человека: " + ages);
 
 // 3 Операторы
 
-//Вычисления (-)
+// Вычисления (-)
 // let currentYear = 2023;
 // const birsthYear = 2004;
 // const age = currentYear - birsthYear;
@@ -28,7 +28,7 @@
 // const a = 10;
 // const b = 30;
 
-//Операции
+// Операции
 // console.log(a + b);
 // console.log(a - b);
 // console.log(a * b);
@@ -112,7 +112,7 @@
 
 // cars[cars.length] = "Mazda"; // Добавить элемент
 // console.log(cars);
-//11 Циклы
+// 11 Циклы
 // const cars = ["Mazda", "Mercedes", "ford"]; // Итерация Масива
 // cars[cars.length] = "Porsche"; // Добавить элемент
 // for (let i = 0; i < cars.length; i++) {
